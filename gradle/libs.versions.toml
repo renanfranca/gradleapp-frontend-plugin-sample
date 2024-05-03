@@ -2,6 +2,7 @@ bundles = {}
 
 [versions]
 	sonarqube = "4.4.1.3373"
+	jqwik = "1.8.4"
 	assertj = "3.25.3"
 	mockito = "5.11.0"
 	checkstyle = "10.16.0"
@@ -20,6 +21,12 @@ bundles = {}
 
 		[libraries.junit-params.version]
 			ref = "junit-jupiter"
+	[libraries.jqwik]
+		name = "jqwik"
+		group = "net.jqwik"
+
+		[libraries.jqwik.version]
+			ref = "jqwik"
 	[libraries.assertj]
 		name = "assertj-core"
 		group = "org.assertj"

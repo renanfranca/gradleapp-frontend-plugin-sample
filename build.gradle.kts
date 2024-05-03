@@ -65,6 +65,7 @@ dependencies {
   testImplementation(libs.assertj)
   testImplementation(libs.mockito)
   testImplementation(libs.approvaltests)
+  testImplementation(libs.jqwik)
   // jhipster-needle-gradle-test-dependencies
 }
 
