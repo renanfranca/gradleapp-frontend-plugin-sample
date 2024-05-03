@@ -6,6 +6,7 @@ bundles = {}
 	mockito = "5.11.0"
 	checkstyle = "10.16.0"
 	junit-jupiter = "5.10.2"
+	approvaltests = "23.1.0"
 [plugins]
 	[plugins.sonarqube]
 		id = "org.sonarqube"
@@ -37,3 +38,9 @@ bundles = {}
 
 		[libraries.mockito.version]
 			ref = "mockito"
+	[libraries.approvaltests]
+		name = "approvaltests"
+		group = "com.approvaltests"
+
+		[libraries.approvaltests.version]
+			ref = "approvaltests"
