@@ -40,5 +40,6 @@ docker compose -f src/main/docker/sonar.yml up -d
 - [Package types](documentation/package-types.md)
 - [Assertions](documentation/assertions.md)
 - [Property Based Testing](documentation/property-based-testing.md)
+- [Logs Spy](documentation/logs-spy.md)
 
 <!-- jhipster-needle-documentation -->
