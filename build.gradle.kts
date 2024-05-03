@@ -1,6 +1,7 @@
 plugins {
   java
   alias(libs.plugins.sonarqube)
+  checkstyle
   // jhipster-needle-gradle-plugins
 }
 
@@ -29,6 +30,12 @@ sonarqube {
       property("sonar.coverage.jacoco.xmlReportPaths", "build/reports/jacoco/test/jacocoTestReport.xml")
       property("sonar.junit.reportPaths", "build/test-results/test,build/test-results/integrationTest")
     }
+}
+
+
+checkstyle {
+  configFile = rootProject.file("checkstyle.xml")
+  toolVersion = libs.versions.checkstyle.get()
 }
 
 // jhipster-needle-gradle-plugins-configurations
