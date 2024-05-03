@@ -4,6 +4,8 @@ spring:
   threads:
     virtual:
       enabled: true
+  profiles:
+    active: '@spring.profiles.active@'
 logging:
   level:
     tech:
