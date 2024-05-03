@@ -4,15 +4,16 @@ bundles = {}
 	protobuf = "4.26.1"
 	protobuf-plugin = "0.9.4"
 	sonarqube = "4.4.1.3373"
-	jqwik = "1.8.4"
+	reflections = "0.10.2"
 	jacoco = "0.8.11"
+	mockito = "5.11.0"
+	os-maven-plugin = "1.7.1"
+	approvaltests = "23.1.0"
+	jqwik = "1.8.4"
 	assertj = "3.25.3"
 	spring-boot = "3.2.5"
-	mockito = "5.11.0"
 	checkstyle = "10.16.0"
-	os-maven-plugin = "1.7.1"
 	junit-jupiter = "5.10.2"
-	approvaltests = "23.1.0"
 [plugins]
 	[plugins.protobuf]
 		id = "com.google.protobuf"
@@ -33,6 +34,9 @@ bundles = {}
 	[libraries.spring-boot-starter]
 		name = "spring-boot-starter"
 		group = "org.springframework.boot"
+	[libraries.spring-boot-starter-web]
+		name = "spring-boot-starter-web"
+		group = "org.springframework.boot"
 	[libraries.spring-boot-starter-test]
 		name = "spring-boot-starter-test"
 		group = "org.springframework.boot"
@@ -42,6 +46,15 @@ bundles = {}
 
 		[libraries.protobuf-java.version]
 			ref = "protobuf"
+	[libraries.spring-boot-starter-validation]
+		name = "spring-boot-starter-validation"
+		group = "org.springframework.boot"
+	[libraries.reflections]
+		name = "reflections"
+		group = "org.reflections"
+
+		[libraries.reflections.version]
+			ref = "reflections"
 	[libraries.protobuf-java-util]
 		name = "protobuf-java-util"
 		group = "com.google.protobuf"
