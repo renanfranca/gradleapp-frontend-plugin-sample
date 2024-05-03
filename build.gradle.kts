@@ -167,6 +167,7 @@ dependencies {
   implementation(libs.spring.boot.starter.data.jpa)
   implementation(libs.hikariCP)
   implementation(libs.hibernate.core)
+  implementation(libs.liquibase.core)
   // jhipster-needle-gradle-implementation-dependencies
   // jhipster-needle-gradle-compile-dependencies
   runtimeOnly(libs.postgresql)
