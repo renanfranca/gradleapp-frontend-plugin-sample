@@ -4,6 +4,7 @@ bundles = {}
 	protobuf = "4.26.1"
 	jib = "3.4.2"
 	protobuf-plugin = "0.9.4"
+	testcontainers = "1.19.7"
 	sonarqube = "4.4.1.3373"
 	reflections = "0.10.2"
 	jacoco = "0.8.11"
@@ -65,6 +66,15 @@ bundles = {}
 
 		[libraries.spring-boot-dependencies.version]
 			ref = "spring-boot"
+	[libraries.testcontainers-postgresql]
+		name = "postgresql"
+		group = "org.testcontainers"
+
+		[libraries.testcontainers-postgresql.version]
+			ref = "testcontainers"
+	[libraries.hibernate-core]
+		name = "hibernate-core"
+		group = "org.hibernate.orm"
 	[libraries.approvaltests]
 		name = "approvaltests"
 		group = "com.approvaltests"
@@ -74,12 +84,21 @@ bundles = {}
 	[libraries.spring-boot-starter-actuator]
 		name = "spring-boot-starter-actuator"
 		group = "org.springframework.boot"
+	[libraries.hikariCP]
+		name = "HikariCP"
+		group = "com.zaxxer"
 	[libraries.spring-boot-starter]
 		name = "spring-boot-starter"
 		group = "org.springframework.boot"
 	[libraries.spring-boot-starter-web]
 		name = "spring-boot-starter-web"
 		group = "org.springframework.boot"
+	[libraries.spring-boot-starter-data-jpa]
+		name = "spring-boot-starter-data-jpa"
+		group = "org.springframework.boot"
+	[libraries.postgresql]
+		name = "postgresql"
+		group = "org.postgresql"
 	[libraries.protobuf-java]
 		name = "protobuf-java"
 		group = "com.google.protobuf"
